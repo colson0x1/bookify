@@ -1,3 +1,12 @@
 {
-  "books": []
+  "books": [
+    {
+      "title": "Morning in Bay Area",
+      "id": 1
+    },
+    {
+      "title": "America Coast",
+      "id": 2
+    }
+  ]
 }
