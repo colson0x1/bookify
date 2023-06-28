@@ -21,7 +21,7 @@ function App() {
       ...books,
       { id: Math.round(Math.random() * 9999), title },
     ];
-    console.log(updatedBooks);
+
     setBooks(updatedBooks);
   };
 
@@ -32,6 +32,7 @@ function App() {
 
   return (
     <div className="app">
+      <h1>Reading List</h1>
       <BookList onEdit={editBookById} books={books} onDelete={deleteBookById} />
       <BookCreate onCreate={createBook} />
     </div>
