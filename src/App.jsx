@@ -10,12 +10,18 @@ function App() {
       ...books,
       { id: Math.round(Math.random() * 9999), title },
     ];
+    console.log(updatedBooks)
+    setBooks(updatedBooks);
+  };
+
+  const deleteBookById = (id) => {
+    const updatedBooks = books.filter((book) => book.id !== id);
     setBooks(updatedBooks);
   };
 
   return (
     <div className="app">
-      <BookList books={books} />
+      <BookList books={books} onDelete={deleteBookById} />
       <BookCreate onCreate={createBook} />
     </div>
   );
