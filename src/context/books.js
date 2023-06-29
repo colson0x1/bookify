@@ -21,7 +21,18 @@ function Provider({ children }) {
       if (book.id === id) {
         return { ...book, ...response.data };
       }
+
       return book;
+    });
+
+    setBooks(updatedBooks);
+  };
+
+  const deleteBookById = async (id) => {
+    await axios.delete(`http://localhost:3001/books/${id}`);
+
+    const updatedBooks = books.filter((book) => {
+      return book.id !== id;
     });
 
     setBooks(updatedBooks);
@@ -32,17 +43,7 @@ function Provider({ children }) {
       title,
     });
 
-    console.log(response);
-
     const updatedBooks = [...books, response.data];
-
-    setBooks(updatedBooks);
-  };
-
-  const deleteBookById = async (id) => {
-    const response = axios.delete(`http://localhost:3001/books/${id}`);
-
-    const updatedBooks = books.filter((book) => book.id !== id);
     setBooks(updatedBooks);
   };
 
@@ -55,7 +56,7 @@ function Provider({ children }) {
   };
 
   return (
-    <BooksContext.Provider value={{ valueToShare }}>
+    <BooksContext.Provider value={valueToShare}>
       {children}
     </BooksContext.Provider>
   );
