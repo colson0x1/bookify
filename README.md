@@ -3,7 +3,7 @@
 Bookify is a React application that allows users to manage a collection of books. It utilizes advanced concepts such as Context API, centralized data store, and more to provide a seamless and efficient user experience.
 
 ### Bookify Home View
-![bookify][https://i.imgur.com/LY9hL1H.png]
+![bookify](https://i.imgur.com/LY9hL1H.png)
 
 ## Features
 
