@@ -1,20 +1,16 @@
 {
   "books": [
     {
-      "title": "Morning in Bay Area Sunrise",
+      "title": "Morning in the Bay Area Sunrise",
       "id": 1
     },
     {
-      "title": "America Coast",
+      "title": "Camp and Fires late in the Hills",
       "id": 2
     },
     {
-      "title": "Camp in the Mountains",
+      "title": "Thrilling Sensation of SkyDive",
       "id": 3
-    },
-    {
-      "title": "Fireworks in the Nightsky",
-      "id": 4
     }
   ]
 }
