@@ -114,9 +114,7 @@ Bookify follows a modular architecture, with components organized in separate fi
 
 - **BookList.jsx:** Displays the list of books fetched from the server. Each book is rendered using the `BookShow` component.
 
--
-
- **BookShow.jsx:** Represents an individual book item in the list. It allows users to edit the book title or delete the book from the collection using the corresponding buttons.
+- **BookShow.jsx:** Represents an individual book item in the list. It allows users to edit the book title or delete the book from the collection using the corresponding buttons.
 
 - **BookEdit.jsx:** Renders a form for editing the book title. It utilizes the `editBookById` function from the BooksContext to update the book's title.
 
